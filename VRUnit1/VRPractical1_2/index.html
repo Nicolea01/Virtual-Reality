@@ -4,47 +4,101 @@
   </head>
   <body>
     <a-scene>
-      <a-entity class="plain_wall" position="0 0 0" rotation="0 0 0">
-        <a-entity class="plank" position="2 0 0">
-          window
-          <a-box position="0 1.5 0" width="1" height="1" depth="0.1" color="#EC5A96"src=""></a-box> pink
-          <a-box position="0 2.5 0" width="1" height="1" depth="0.1" color="#EC5A96"src=""></a-box>
-          
-          <a-box position="-4 0.5 -3" width="1" height="5" depth="6" src=""></a-box>
-          <a-box position="0 0.5 -3" width="1" height="5" depth="6" src=""></a-box> side 
-         
-          top 
-          <a-box position="-2 4 0" width="4" height="2" depth="0.1" color="#5ECBC8"src=""></a-box>
-
-          <a-box position="-2 4 0" width="4" height="2" depth="0.1" color="#5ECBC8"src=""></a-box>
-        </a-entity>
-
-        <a-entity class="plank" position="1 0 0">
-          <a-box position="0 0.5 0" width="1" height="1" depth="0.1" src=""></a-box>
-          <a-box position="0 1.5 0" width="1" height="1" depth="0.1" src=""></a-box>
-          <a-box position="0 2.5 0" width="1" height="1" depth="0.1" src=""></a-box>
-        </a-entity>
-
-        <a-entity class="plank" position="0 0 0">
-          door entry
-          <a-box position="0 2.5 0" width="1" height="1" depth="0.1" src=""></a-box>
-        </a-entity>
-
-        <a-entity class="plank" position="-1 0 0">
-          <a-box position="0 0.5 0" width="1" height="1" depth="0.1" src=""></a-box>
-          <a-box position="0 1.5 0" width="1" height="1" depth="0.1" src=""></a-box>
-          <a-box position="0 2.5 0" width="1" height="1" depth="0.1" src=""></a-box>
-        </a-entity>
-        <a-entity class="plank" position="-2 0 0">
-          <a-box position="0 0.5 0" width="1" height="1" depth="0.1" src=""></a-box>
-          <a-box position="0 1.5 0" width="1" height="1" depth="0.1" src=""></a-box>
-          <a-box position="0 2.5 0" width="1" height="1" depth="0.1" src=""></a-box>
-        </a-entity>
-
-        
-        
-        
-
+            <a-scene>
+ <a-box position="0 0 0" width="8" height="0.2" depth="6" color="#C8B49A" src=""></a-box>
+  <!-- HOUSE BACK WALL -->
+  <a-box position="0 1.5 -3" width="8" height="3" depth="0.2" color="#F1E7D8" src=""></a-box>
+  <!-- HOUSE LEFT WALL -->
+  <a-box position="-4 1.5 0" width="0.2" height="3" depth="6" color="#F1E7D8" src=""></a-box>
+  <!-- HOUSE RIGHT WALL -->
+  <a-box position="4 1.5 0" width="0.2" height="3" depth="6" color="#F1E7D8" src=""></a-box>
+  <!-- FRONT WALL LEFT SECTION -->
+  <a-box position="-2.8 1.5 3" width="2.4" height="3" depth="0.2" color="#F1E7D8" src=""></a-box>
+  <!-- FRONT WALL RIGHT SECTION -->
+  <a-box position="2.5 1.5 3" width="3" height="3" depth="0.2" color="#F1E7D8" src=""></a-box>
+  <!-- MIDDLE WALL DIVIDING TWO ROOMS -->
+  <a-box position="0 1.5 -1" width="0.15" height="3" depth="3" color="#D6C4AF" src=""></a-box>
+  <!-- FRONT DOOR -->
+  <a-box position="-0.8 1.1 3.1" width="0.9" height="2.2" depth="0.08" color="#5B3927" src=""></a-box>
+  <!-- DOOR WINDOW -->
+  <a-box position="-0.8 1.6 3.16" width="0.55" height="0.8" depth="0.03" color="#8EC8DF"></a-box>
+  <!-- DOOR HANDLE -->
+  <a-sphere position="-0.5 1.1 3.2"
+            radius="0.06"
+            color="#D6B56D"></a-sphere>
+  <!-- ROOM 1 WINDOW -->
+  <a-box position="-2.5 1.8 3.12"
+         width="1.1" height="1.2" depth="0.05"
+         color="#8EC8DF"></a-box>
+  <!-- ROOM 1 WINDOW FRAME -->
+  <a-box position="-2.5 1.8 3.17"
+         width="0.06" height="1.2" depth="0.06"
+         color="#292421"></a-box>
+  <a-box position="-2.5 1.8 3.17"
+         width="1.1" height="0.06" depth="0.06"
+         color="#292421"></a-box>
+  <!-- ROOM 2 WINDOW -->
+  <a-box position="2.4 1.8 3.12"
+         width="1.1" height="1.2" depth="0.05"
+         color="#8EC8DF"></a-box>
+  <a-box position="2.4 1.8 3.17"
+         width="0.06" height="1.2" depth="0.06"
+         color="#292421"></a-box>
+  <a-box position="2.4 1.8 3.17"
+         width="1.1" height="0.06" depth="0.06"
+         color="#292421"></a-box>
+  <!-- HOUSE ROOF LEFT SLOPE -->
+  <a-box position="-2 3.2 0"
+         width="4.6" height="0.25" depth="6.8"
+         rotation="0 0 12"
+         color="#594034"></a-box>
+  <!-- HOUSE ROOF RIGHT SLOPE -->
+  <a-box position="2 3.2 0"
+         width="4.6" height="0.25" depth="6.8"
+         rotation="0 0 -12"
+         color="#594034"></a-box>
+  <!-- GARAGE FLOOR CONNECTED TO HOUSE -->
+  <a-box position="6.5 0 0"
+         width="5" height="0.2" depth="6"
+         color="#A9A9A9"></a-box>
+  <!-- GARAGE BACK WALL -->
+  <a-box position="6.5 1.5 -3"
+         width="5" height="3" depth="0.2"
+         color="#E5D8C7"></a-box>
+  <!-- GARAGE RIGHT WALL -->
+  <a-box position="9 1.5 0"
+         width="0.2" height="3" depth="6"
+         color="#E5D8C7"></a-box>
+  <!-- GARAGE FRONT LEFT WALL -->
+  <a-box position="5.1 1.5 3"
+         width="2.2" height="3" depth="0.2"
+         color="#E5D8C7"></a-box>
+  <!-- GARAGE FRONT RIGHT WALL -->
+  <a-box position="8.6 1.5 3"
+         width="0.8" height="3" depth="0.2"
+         color="#E5D8C7"></a-box>
+  <!-- GARAGE DOOR -->
+  <a-box position="6.9 1.25 3.05"
+         width="1.5" height="2.5" depth="0.1"
+         color="#B8B3AA"></a-box>
+  <!-- GARAGE DOOR HORIZONTAL LINES -->
+  <a-box position="6.9 0.7 3.12"
+         width="1.45" height="0.05" depth="0.04"
+         color="#69645D"></a-box>
+  <a-box position="6.9 1.2 3.12"
+         width="1.45" height="0.05" depth="0.04"
+         color="#69645D"></a-box>
+  <a-box position="6.9 1.7 3.12"
+         width="1.45" height="0.05" depth="0.04"
+         color="#69645D"></a-box>
+  <a-box position="6.9 2.2 3.12"
+         width="1.45" height="0.05" depth="0.04"
+         color="#69645D"></a-box>
+  <!-- GARAGE ROOF -->
+  <a-box position="6.5 3.2 0"
+         width="5.5" height="0.25" depth="6.8"
+         color="#594034"></a-box>
+ 
       <a-plane position="0 0 0" rotation="-90 0 0" width="100" height="100" color="#7BC8A4"></a-plane>
       <a-sky color="#ECECEC"></a-sky>
       <a-camera position="0 1.4 5"></a-camera>
