@@ -4,16 +4,45 @@
   </head>
   <body>
     <a-scene>
+     
+       <a-entity class="taxi" position="0 -2 -9">
       
-        <a-box position="-10 2 -3" width="4" height="1.85" depth="6.75" rotation="0 45 0" src="purp.jpg">
-        <a-cone position="0 1.67 0" radius-bottom="2.8" radius-top="0" height="1.5" segments-radial="4" rotation="0 0 0" scale="1 1 2" color="#C83D95" src="purp.jpg"></a-cone>
-        <a-box position="0 0.5 3.38" width="3.8" height="0.5" depth="0.07" color="#70B0E0"></a-box>
-        <a-box position="0 -0.15 3.4" width="3.8" height="0.85" depth="0.07" color="#FFBBED" src="tesla.jpg"></a-box>
-
-        <a-torus position="-1.8 -0.75 2" rotation="0 90 0" radius="1" tube="0.25" color="#966345" src="tire.jpg"></a-torus>    
-        <a-torus position="1.8 -0.75 2" rotation="0 90 0" radius="1" tube="0.25" color="#f26513" src="tire.jpg"></a-torus>        
-        <a-torus position="-1.8 -0.75 -2" rotation="0 90 0" radius="1" tube="0.25" color="#f26513" src="tire.jpg"></a-torus>       
-        <a-torus position="1.8 -0.75 -2" rotation="0 90 0" radius="1" tube="0.25" color="#966345" src="tire.jpg"></a-torus>    
+        <a-box position="1.5 0.4 -1" width="4" height="0.25" depth="2" color="black"></a-box>
+        <a-box position="1.5 0.88 -1" width="4" height="0.7" depth="2" color="#FFC1CB"></a-box>
+        
+        <a-box position="3.4 0.83 -0.4" rotation="0 90 0" width="0.3" height="0.3" depth="0.3" color="#8c140e"></a-box>
+        <a-box position="3.4 0.83 -1.6" rotation="0 90 0" width="0.3" height="0.3" depth="0.3" color="#8c140e"></a-box>
+       
+        <a-box position="-0.41 1 -0.14" rotation="0 90 0" width="0.3" height="0.3" depth="0.21" color="white"></a-box>
+        <a-box position="-0.41 1 -1.86" rotation="0 90 0" width="0.3" height="0.3" depth="0.21" color="white"></a-box>
+        
+        <a-box position="1.7 1.5 -1" width="2.5" height="0.8" depth="1.7" color="#e8e6e6"></a-box>
+        <a-box position="1.7 2 -1" width="1.5" height="0.3" depth="0.8" color="#FFC1CB"></a-box>
+       
+        <a-box position="1.7 1.5 -1" width="2.52" height="0.5" depth="1.3" color="black"></a-box>
+        <a-box position="1.3 1.5 -1" rotation="0 90 0" width="1.72" height="0.5" depth="1.3" color="black"></a-box>
+        <a-box position="2.5 1.5 -1" rotation="0 90 0" width="1.72" height="0.5" depth="0.3" color="black"></a-box>
+     
+      <a-entity class="wheel">
+          <a-cylinder position="0.2 0.4 0" rotation="90 0 0" radius="0.2" height="0.45"></a-cylinder>
+          <a-cylinder position="0.2 0.4 0" rotation="90 0 0" radius="0.4" height="0.42" color="black"></a-cylinder>
+        </a-entity>
+       
+         <a-entity class="wheel">
+          <a-cylinder position="0.2 0.4 -2" rotation="90 0 0" radius="0.2" height="0.45"></a-cylinder>
+          <a-cylinder position="0.2 0.4 -2" rotation="90 0 0" radius="0.4" height="0.42" color="black"></a-cylinder>
+        </a-entity>
+       
+        <a-entity class="wheel">
+          <a-cylinder position="2.9 0.4 -2" rotation="90 0 0" radius="0.2" height="0.45"></a-cylinder>
+          <a-cylinder position="2.9 0.4 -2" rotation="90 0 0" radius="0.4" height="0.42" color="black"></a-cylinder>
+       
+        <a-entity class="wheel">
+          <a-cylinder position="2.9 0.4 0" rotation="90 0 0" radius="0.2" height="0.45"></a-cylinder>
+          <a-cylinder position="2.9 0.4 0" rotation="90 0 0" radius="0.4" height="0.42" color="black"></a-cylinder>
+        </a-entity>
+      </a-entity>
+    </a-entity>  
 
 
       <a-sky color="F5F5DC" src="Sky2.jpg"></a-sky>
